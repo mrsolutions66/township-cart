@@ -31,3 +31,21 @@ Navigation works successfully between Welcome and Login screens.
 
 ## Next Step
 Create Signup UI and Firebase Authentication.
+## Completed
+- Expo app setup
+- Navigation working
+- Welcome screen created
+- Login screen created
+- Routing fixed
+- Stack navigation configured
+- GitHub connected
+- Git workflow working
+- Created project folder structure
+- Added Colors.ts
+- Added Theme.ts
+
+## Current Goal
+Build reusable UI components.
+
+## Next Step
+Create Button component.
