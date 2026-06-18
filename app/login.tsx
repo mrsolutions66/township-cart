@@ -1,11 +1,6 @@
 import { useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  TouchableOpacity,
-} from "react-native";
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import Button from "../components/Button";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
@@ -34,13 +29,14 @@ export default function LoginScreen() {
         onChangeText={setPassword}
       />
 
-      <TouchableOpacity style={styles.button}>
-        <Text style={styles.buttonText}>Login</Text>
-      </TouchableOpacity>
+      <Button
+        title="Login"
+        onPress={() => console.log("Login pressed")}
+      />
 
       <TouchableOpacity>
         <Text style={styles.signupText}>
-          Don’t have an account? Sign Up
+          Don't have an account? Sign Up
         </Text>
       </TouchableOpacity>
     </View>
@@ -78,20 +74,6 @@ const styles = StyleSheet.create({
     borderRadius: 14,
     marginBottom: 16,
     fontSize: 16,
-  },
-
-  button: {
-    backgroundColor: "#22C55E",
-    padding: 16,
-    borderRadius: 14,
-    alignItems: "center",
-    marginTop: 10,
-  },
-
-  buttonText: {
-    color: "white",
-    fontWeight: "bold",
-    fontSize: 18,
   },
 
   signupText: {
