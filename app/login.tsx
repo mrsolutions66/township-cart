@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+
 import Button from "../components/Button";
+import Input from "../components/Input";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
@@ -12,21 +14,17 @@ export default function LoginScreen() {
 
       <Text style={styles.title}>Welcome Back 👋</Text>
 
-      <TextInput
+      <Input
         placeholder="Enter your email"
-        placeholderTextColor="#94A3B8"
-        style={styles.input}
         value={email}
         onChangeText={setEmail}
       />
 
-      <TextInput
+      <Input
         placeholder="Enter your password"
-        placeholderTextColor="#94A3B8"
-        secureTextEntry
-        style={styles.input}
         value={password}
         onChangeText={setPassword}
+        secureTextEntry
       />
 
       <Button
@@ -65,15 +63,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     marginBottom: 40,
     textAlign: "center",
-  },
-
-  input: {
-    backgroundColor: "#1E293B",
-    color: "white",
-    padding: 16,
-    borderRadius: 14,
-    marginBottom: 16,
-    fontSize: 16,
   },
 
   signupText: {
