@@ -69,3 +69,25 @@ Build reusable Input component.
 
 ## Next Step
 Replace TextInput with reusable Input component.
+## Completed
+- Expo app setup
+- Navigation working
+- Welcome screen created
+- Login screen created
+- Signup screen created
+- Routing fixed
+- Stack navigation configured
+- GitHub connected
+- Git workflow working
+- Project folder structure
+- Added Colors.ts
+- Added Theme.ts
+- Created reusable Button component
+- Created reusable Input component
+- Created reusable Card component
+
+## Current Goal
+Build Role Selection Screen.
+
+## Next Step
+Create reusable role cards and navigate to Home.
